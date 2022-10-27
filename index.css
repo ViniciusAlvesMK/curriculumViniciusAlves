@@ -609,10 +609,23 @@ body:not(.user-is-tabbing) a:focus {
   top: 0;
   left: 0;
 }
+
+.reveal{
+  transform: translateX(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+
 .image2 {
   position: absolute;
   top: 0px;
   left: 0px;
+  filter: drop-shadow(16px 16px 10px black);
 }
 
 /* --------------------------------------- */
@@ -629,6 +642,22 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__info {
     max-width: var(--container-medium-width);
+}
+
+
+.textRight {
+    float: right;
+    clear: all;
+    display: block;
+    padding-right: var(--gutter-medium);
+    
+}
+
+.textLeft {
+    float: left;
+    clear: all;
+    display: block;
+    padding-right: var(--gutter-medium);
 }
 
 /* --------------------------------------- */
