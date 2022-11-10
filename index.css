@@ -79,6 +79,7 @@ body {
 .row {
     max-width: var(--container-max-width);
     margin: 0 auto;
+    clear: both;
 }
 
 .video-container{
@@ -508,7 +509,7 @@ body:not(.user-is-tabbing) a:focus {
 .work__code {
     display: block;
     height: 3rem;
-    margin-left: var(--gutter-normal);
+    margin: var(--gutter-normal);
     transition: all .3s;
 }
 
@@ -626,7 +627,13 @@ body:not(.user-is-tabbing) a:focus {
   top: 0px;
   left: 0px;
   filter: drop-shadow(16px 16px 10px black);
+  transition: all .3s;
 }
+
+.image2:hover {
+    transform: scale(1.2);
+}
+
 
 /* --------------------------------------- */
 /* ----- Contact ----- */
@@ -634,7 +641,16 @@ body:not(.user-is-tabbing) a:focus {
 
 .contact__info {
     max-width: var(--container-medium-width);
+    display: inline-block; 
 }
+
+.emoji {
+    float: right;
+    display: inline-block;
+    height: 3rem;
+    margin: var(--gutter-small);
+}
+
 
 /* --------------------------------------- */
 /* ----- Work Experience ----- */
@@ -664,9 +680,11 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Footer ----- */
 /* --------------------------------------- */
 
+
 .footer {
     text-align: center;
     padding: var(--gutter-medium) 0 var(--gutter-normal);
+    clear: both;
 }
 
 .footer__social-links {
